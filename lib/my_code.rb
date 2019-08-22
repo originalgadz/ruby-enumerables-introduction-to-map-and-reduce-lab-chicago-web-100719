@@ -41,10 +41,10 @@ end
 def reduce_to_all_true (source_array)
     test = true
     source_array.length.times do |index|
-      if source_array[index] != true
+      if source_array[index] = false
         test = false
       end
     end
-    test
+    return test
   end
       
