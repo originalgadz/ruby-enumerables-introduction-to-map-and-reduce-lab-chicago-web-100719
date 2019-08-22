@@ -47,4 +47,15 @@ def reduce_to_all_true (source_array)
     end
     test
   end
+  
+def reduce_to_any_true (source_array)
+    test = false
+    source_array.length.times do |index|
+      if source_array[index]
+        test = true
+      end
+    end
+    test
+  end
+  
       
