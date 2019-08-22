@@ -45,6 +45,6 @@ def reduce_to_all_true (source_array)
         test = false
       end
     end
-    return test
+    test
   end
       
