@@ -29,3 +29,33 @@ def map_to_square (source_array)
   end
   new_array
 end
+
+def reduce_to_total (source_array, starting_point=0)
+    total = starting_point
+  source_array.length.times do |index|
+    total = total + source_array[index]
+  end
+  total
+end
+
+def reduce_to_all_true (source_array)
+    test = true
+    source_array.length.times do |index|
+      if source_array[index] == false
+        test = false
+      end
+    end
+    test
+  end
+  
+def reduce_to_any_true (source_array)
+    test = false
+    source_array.length.times do |index|
+      if source_array[index]
+        test = true
+      end
+    end
+    test
+  end
+  
+      
